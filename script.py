@@ -1,18 +1,23 @@
-import 
+from datetime import date
+contest_name = input("コンテストの名前を入力してください。(ex)ABC001 ⇛ abc001 : ")
+problem_number = input("問題名を入力してください。(ex)ABC001のA問題の場合 ⇛ a : ")
+submission_url = input("提出コードのURLを入力してください : ")
 
-n,m = map(int,input().split())
-p = [_ for _ in range(1,n + 1)]
-c = []
-for _ in range(m):
-    c.append(list(map(int,input().split()))[1:])
+cn = contest_name.upper()
+pm = problem_number.upper()
 
-for i in itertools.combinations(p,2):
-    i = list(i)
-    r = 0
-    for j in c:
-        if i[0] in j and i[1] in j:
-            r += 1
-    if r == 0:
-        print("No")
-        exit()
-print("Yes")
+try:
+    with open(f"records/{contest_name}_{problem_number}.md", mode='x') as f:
+        f.write(
+            f"""### [{cn} - {pm}](https://atcoder.jp/contests/{contest_name}/tasks/{contest_name}_{problem_number})
+            
+[提出]({submission_url})
+
+{date.today()}
+            """
+        )
+except FileExistsError:
+    pass
+
+with open("index.md", mode='a') as f:
+    f.write(f'\n| {cn} - {pm} | {date.today()} | {submission_url} |')
