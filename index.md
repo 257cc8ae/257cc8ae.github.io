@@ -11,3 +11,5 @@
 | [ABC269 - B](records/abc269_b.md) | 2022-10-15 | [提出結果](https://atcoder.jp/contests/abc269/submissions/35685154) |
 | [ABC268 - B](records/abc268_b.md) | 2022-10-15 | [提出結果](https://atcoder.jp/contests/abc268/submissions/35687159) |
 | [ABC266 - A](records/abc266_a.md) | 2022-10-15 | [提出結果](https://atcoder.jp/contests/abc266/submissions/35695280) |
+| [ABC265 - A](records/abc265_a.md) | 2022-10-15 | [提出結果](https://atcoder.jp/contests/abc265/submissions/35698554) |
+| [ABC264 - A](records/abc264_a.md) | 2022-10-15 | [提出結果](https://atcoder.jp/contests/abc264/submissions/35698826) |
