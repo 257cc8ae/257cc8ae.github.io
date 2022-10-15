@@ -10,7 +10,7 @@ print(21 - (a + b + c))
 
 が最も記述量が少なく最適と考えられる。
 
-[提出](https://atcoder.jp/contests/abc271/tasks/abc271_a)
+[提出](https://atcoder.jp/contests/abc202/submissions/35457723)
 
 2022-10-15
             

@@ -20,4 +20,4 @@ except FileExistsError:
     pass
 
 with open("index.md", mode='a') as f:
-    f.write(f'\n| {cn} - {pm} | {date.today()} | {submission_url} |')
+    f.write(f'\n| [{cn} - {pm}](records/{contest_name}_{problem_number}.md) | {date.today()} | [提出結果]({submission_url}) |')
